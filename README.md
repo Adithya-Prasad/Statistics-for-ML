@@ -123,6 +123,52 @@ A non-parametric statistical technique that estimates the probability density fu
 6. The first step toward KDE is to focus on just one data point. What would you do if asked to create a PDF for a single data point? To begin, take x = 0. The most logical approach is to use a PDF that is peaking precisely over that point and decaying with distance from it.
 7. This Kernel is equivalent to a Gaussian distribution with zero mean and unit variance.
 
+
+# Central Tendency
+
+The measure used to define the center of the distribution.
+
+1. Mean: Average of the data/values
+2. Median: Useful when outliers are present. After **sorting** the numbers; For odd numbers, we need to consider the middle value and For even numbers, we need to take the average of the middle two values.
+3. Mode: Most occurring data.
+
+-> Notes: Median is calculated when there are some missing/undetermined/outliers values present in the data or the dataset is infinite.
+
+# Measures of Dispersion
+
+Dispersion = Spread
+
+1. Variance:
+  It is the measure of distance of each variable from the average value or mean value in its dataset.
+
+   - Population variance:
+
+![Population Variance Formula](https://github.com/user-attachments/assets/48b76782-6525-4fbb-b1c2-bbfa938eae3d)
+
+   - Sample variance:
+
+![Sample Variance Formula](https://github.com/user-attachments/assets/f7f4a3d3-9003-4949-9704-8618c01ce108)
+
+2. Standard Deviation:
+
+   Squareroot of Variance
+
+   <img width="572" alt="image" src="https://github.com/user-attachments/assets/a0408490-d11b-4542-ac3b-28b4d217c2d6">
+
+Variance and SD are all affected in the same way in the subject of the spread of the data. We use all these to present the data in a better manner.
+
+
+
+
+
+
+
+# References:
+
+Main Source: [Complete Statistics For Data Science In 6 hours By Krish Naik](https://www.youtube.com/watch?v=LZzq1zSL1bs)
+
+[MathBitsNotebook](https://mathbitsnotebook.com/Algebra2/Statistics/STnormalDistribution.html)
+
 (**Ongoing)
 
 
