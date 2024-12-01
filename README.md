@@ -41,10 +41,47 @@ Here the population is split into **non-overlapping groups**.
 
 Example: If we are surveying the Job Satisfaction Index, Then if we consider Strata/layer/part of Engineers and Doctors there is a little chance that the Engineer's features/characteristics overlap with the Doctor's. There is no relationship between these two groups. So we will select some values from both the groups as samples from the population.
 
+# Outliers
+
+Outliers are the extreme values/numbers. 
+
+- In statistics, an outlier is a data point that differs significantly from other observations. An outlier may be due to a variability in the measurement, an indication of novel data, or it may be the result of experimental error; the latter are sometimes excluded from the data set. (Wikipedia)
+
+## Inter Quartile Range (IQR)
+
+In descriptive statistics, the interquartile range is a measure of statistical dispersion, which is the spread of the data. The IQR may also be called the midspread, middle 50%, fourth spread, or H‑spread. It is defined as the difference between the 75th and 25th percentiles of the data. (Wikipedia)
+
+IQR = Q3- Q2
+
+Quartiles are defined as statistical measures that divide the given dataset into four equal parts: the first quartile (Q1), second quartile (Q2), and third quartile (Q3).
+
+- Q1 is defined as the middle number between the smallest number and the median of the data set.
+- Q2 is the median of the data.
+- Q3 is the middle value between the median and the highest value of the data set.
+
+Steps:
+1. Sort the data
+2. Find the median of total data/values/columns = Q2 = 50th Percentile
+3. The Calculated Median divides given values into two equal parts as Lower Half and Upper half. these Lower Half and Upper half are determined as Q1 and Q3 parts.
+4. Find Q1 (Median of the data before Q2) = 25th Percentile
+5. Find Q3 (Median of the data after Q2) = 75th Percentile
+6. Finally we subtract Q1 and Q3 to get IQR
+   
+![image](https://github.com/user-attachments/assets/9262980c-0aae-4981-be27-94fd88b778c5)
+
+#### Upper and Lower Fence
+
+The lower fence is the "lower limit" and the upper fence is the "upper limit" of data, and any data lying outside these defined bounds can be considered an outlier. The fences provide a guideline by which to define an outlier, which may be defined in other ways. The fences define a "range" outside which an outlier exists; a way to picture this is a boundary of a fence. It is common for the lower and upper fences along with the outliers to be represented by a boxplot
+
+- Upper Fence = Q3 + 1.5* IQR
+- Lower Fence = Q1 - 1.5* IQR
+
+![image](https://github.com/user-attachments/assets/0fc85aed-e3df-4748-b8ed-85b62970ac26)
+
 
 # Variables:
 
-Variable can contain any value. 
+A variable can contain any value. 
 
 There are two types of Variables.
 1. Quantitative Variable (Measured numerically; Ex: Age, Marks)
@@ -168,6 +205,8 @@ Variance and SD are all affected in the same way in the subject of the spread of
 Main Source: [Complete Statistics For Data Science In 6 hours By Krish Naik](https://www.youtube.com/watch?v=LZzq1zSL1bs)
 
 [MathBitsNotebook](https://mathbitsnotebook.com/Algebra2/Statistics/STnormalDistribution.html)
+
+[geeksforgeeks](https://www.geeksforgeeks.org)
 
 (**Ongoing)
 
