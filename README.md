@@ -41,6 +41,11 @@ Here the population is split into **non-overlapping groups**.
 
 Example: If we are surveying the Job Satisfaction Index, Then if we consider Strata/layer/part of Engineers and Doctors there is a little chance that the Engineer's features/characteristics overlap with the Doctor's. There is no relationship between these two groups. So we will select some values from both the groups as samples from the population.
 
+### 4. Convenience Sampling:
+Here sampling is done by taking the data with some basic rules/conditions.
+
+Example: If we are surveying regarding the skillsets of the data science domain, then out of the Population of the data only those data will be taken who are data scientists and know data science.
+
 # Outliers
 
 Outliers are the extreme values/numbers. 
